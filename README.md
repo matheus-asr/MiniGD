@@ -1,13 +1,13 @@
-## Análise de geração e consumo - Mini GD
+# Análise de geração e consumo - Mini GD
 
-# Visão geral
+## Visão geral
 
 Este projeto visa a análise de dados referentes a minigeração distribuída no Brasil, analisando características como crescimento anual, estados contribuintes, consumo, fonte de energia etc. Todos os dados deste estudo são provenientes da Agência Nacional de Energia Elétrica (ANEEL), e são de domínio público. 
 
 O painel de dashboard no PowerBI elaborado pode ser acessado a partir do link: ( https://app.powerbi.com/view?r=eyJrIjoiNDEzZGMwNTktNDI1YS00ZDAxLTkxYTQtYTBhNTc5NzlmNDExIiwidCI6IjJmYTNkYTk2LWVjNjItNGM3MC05MWRjLTMwMDkzYmRiMzdkNiJ9 ) 
 
 
-# Desenvolvimento
+## Desenvolvimento
 
 Para o desenvolvimento deste projeto, foram utilizados scripts em Python 3.12 para a API e manipulação de dados, e um dashboard no PowerBI para a visualização destes.
 Os dados abertos estão hospedados no sistema de gerenciamento de dados CKAN, e foram obtidos a partir de API's em Python, uma vez que foram utilizados dois conjuntos de dados distintos. Para a análise exploratória, tratamento, e manipulação de dados foram utilizadas as bibliotecas Pandas, JSON, e IO. 
@@ -17,7 +17,7 @@ Uma vez prontos, foi feita a exportação de dois scripts em Python para o Power
 Após carregar os dois conjuntos de dados para o PowerBI, foi criada uma tabela Calendário, a partir da linguagem DAX, a fim de gerenciar o relacionamento de datas entre as tabelas Empreendimentos e Historico. Em ambos os casos, foram utilizados relacionamentos de um para muitos, da tabela Calendario para as demais. Posteriormente, foram gerados os gráficos a serem analisados.
 
 
-# Análises
+## Análises
 
 Os gráficos e indicadores foram elaborados com o objetivo de se analisar a evolução da minigeração distribuída ao longo dos anos, assim como os estados e distribuidoras com maior geração, e o consumo por classe de consumidor desta fatia da geração distribuída. Entre as informações mais relevantes, se encontra o crescimento de aproximadamente 44% da potência instalada anualmente entre 2022 e 2023 na minigeração, indicando o aquecimento do mercado da geração distribuída.
  
@@ -28,7 +28,7 @@ A partir da análise dos gráficos nota-se também que os estados do sudeste lid
 Após a conclusão do projeto observa-se a necessidade de um aprofundamento nas particularidades do mercado energético que podem gerar tendências, como incentivos tributários de cada estado, tarifas energéticas, variação de custos de equipamentos utilizados na geração distribuída, entre outros. Para uma análise completa do cenário de geração distribuída, também se faz necessária a inclusão de dados referentes à microgeração, que representa uma grande, e ainda crescente parcela sobre a capacidade de geração nacional.
 
 
-# Referências
+## Referências
 
 Os dados abertos utilizados estão disponíveis para consulta através do link: ( https://dadosabertos.aneel.gov.br/organization/agencia-nacional-de-energia-eletrica ). <Acesso em 27 de maio de 2024.>
 
